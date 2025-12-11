@@ -1,5 +1,6 @@
 const fonts = [
     [import.meta.env.VITE_APP_FONT_FAMILY, '默认全局'],
+    ['oppo-sans', 'OPPOSans', 'https://www.sumi233.top/custom/css/font.css'],
     ['Microsoft YaHei', '微软雅黑'],
     // [字体名称, 显示名称, CSS文件地址]
     ['HarmonyOS_Regular', '鸿蒙字体', 'https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css'],
@@ -10,8 +11,8 @@ const fonts = [
 ];
 
 export const defaultConfig = {
-    text: '梦爱吃鱼',       // 默认文本
-    watermark: '@梦爱吃鱼', // 默认水印
+    text: '酥米小站',       // 默认文本
+    watermark: '@酥米小站', // 默认水印
     fontFamily: import.meta.env.VITE_APP_FONT_FAMILY,
     fontStyles: fonts.map(f => f[2]).filter(Boolean),
     fontOptions: fonts.map(([value, label]) => ({ value, label }))
